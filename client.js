@@ -12,6 +12,9 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("The connection is made");
     conn.write('Name: CBB')
+    // const moveUp = conn.write('Move: up')
+    // setInterval(moveUp => moveUp, 50)
+
   });
 
   conn.on('data', (data) => {
