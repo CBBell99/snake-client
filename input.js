@@ -16,31 +16,30 @@ const setupInput = function(conn) {
 
 
 const handleUserInput = function(key) {
-  console.log(key)
   if (key === '\u0003') {
     process.exit();
   }
   if (key === 'w') {
-    connection.write('Move: up')
+    connection.write('Move: up');
   }
   if (key === 's') {
-    connection.write('Move: down')
+    connection.write('Move: down');
   }
   if (key === 'a') {
-    connection.write('Move: left')
+    connection.write('Move: left');
   }
   if (key === 'd') {
-    connection.write('Move: right')
+    connection.write('Move: right');
   }
   if (key === 'l') {
-    connection.write('Say: MOVE!')
+    connection.write('Say: MOVE!');
   }
   if (key === 'k') {
-    connection.write('Say: OUTTA')
+    connection.write('Say: OUTTA');
   }
   if (key === 'j') {
-    connection.write('Say: MY WAY')
+    connection.write('Say: MY WAY');
   }
-}
+};
 
-module.exports = { setupInput }
+module.exports = { setupInput };
